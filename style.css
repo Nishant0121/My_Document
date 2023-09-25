@@ -1,0 +1,187 @@
+body{
+  background: black;
+}
+#navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar #logo{
+  display: block;
+  height: 65px;
+  /* border: yellow solid 2px; */
+  width: 45%;
+}
+#navbar #logo div img{
+  height: 50px;
+  width: 50px;
+}
+#navbar #socialmedia div a img{
+  height: 45px;
+  width: 45px;
+}
+#navbar #socialmedia{
+  display: flex;
+  justify-content: right;
+  height: 65px;
+  /* border: yellow solid 2px; */
+  width: 45%;
+}
+#navbar #socialmedia div{
+  padding: 10px;
+  margin: 5px;
+}
+
+
+#content{
+  padding: 15px;
+  color: white;
+  display: flex;
+}
+#content #info{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+#content #info h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+#content #info h1 p{
+  margin: 20px;
+  animation: colorChange 4s infinite alternate;
+}
+#content #image{
+  width: 40%;
+}
+#content #image img{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#footer{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: azure;
+  font-size: larger;
+}
+#footer #typeing{
+  border-right: 0.15em solid rgb(255, 255, 255);
+  white-space: nowrap; 
+  
+  font-size: larger; 
+  animation: typing  5s steps(40) infinite; 
+  
+}
+
+
+
+#project{
+  color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+#project div #img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes typing {
+  from
+   {
+     width: 0;
+    }
+  to
+   {
+    width: 215px; 
+  }
+}
+
+@media (max-width:900px){
+  #content #info h1{
+    display: block;
+  }
+  #content #info h1 p{
+    margin: 5px;
+  }
+  #content #image img{
+    height: 300px;
+    width: 261px;
+  }
+}
+
+@media (max-width:700px){
+  #navbar #logo div img{
+    height: 45px;
+    width: 45px;
+  }
+  #navbar #socialmedia div a img{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width:650px){
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
+  #content #image{
+    width: 100%;
+  }
+  #about{
+    font-size: 37px;
+  }
+  #content #info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+  }
+  #content #image img{
+    height: 300px;
+    width: 260px;
+  }
+  #content #image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
