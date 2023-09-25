@@ -1,0 +1,118 @@
+body{
+  background: black;
+}
+#navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar #logo{
+  display: block;
+  height: 65px;
+  /* border: yellow solid 2px; */
+  width: 45%;
+}
+#navbar #socialmedia{
+  display: flex;
+  justify-content: right;
+  height: 65px;
+  /* border: yellow solid 2px; */
+  width: 45%;
+}
+#navbar #socialmedia div{
+  padding: 10px;
+  margin: 5px;
+}
+
+
+#content{
+  padding: 15px;
+  color: white;
+  display: flex;
+}
+#content #info{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+#content #info h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+#content #info h1 p{
+  animation: colorChange 4s infinite alternate;
+}
+
+
+
+#footer{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: azure;
+  font-size: larger;
+}
+#footer #typeing{
+  margin: 0px;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 255, 255); /* Adjust the color and size of the cursor */
+  white-space: nowrap; /* Make the text appear in one line */
+   /* Center the text */
+  font-size: larger; /* Adjust the font size */
+  animation: typing  2.5s steps(40) infinite; 
+  /* animation: colorChange 5s infinite alternate; */
+}
+
+
+
+#project{
+  color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+#project div #img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes typing {
+  from
+   {
+     width: 0;
+    }
+  to
+   {
+    width: 215px; 
+  }
+}
